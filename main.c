@@ -28,6 +28,12 @@ int main(void){
 
         if( number == guess_value){
             done = YES;
+            printf("\n\nFélicitations! Vous avez trouvé en %d essais !", nbr_of_guesses);
+
+        }
+        else if(nbr_of_guesses >= 10){
+            printf("\nFini apres %d essais", nbr_of_guesses);
+            break;
         }
         else if(number < guess_value){
             printf("\nCe nombre est trop grand !\n");
@@ -35,9 +41,6 @@ int main(void){
             printf("\nCe nombre est trop petit !\n");
         }
     }
-
-    printf("\n\nFélicitation! Vous avez trouve en %d essais !", nbr_of_guesses);
-    printf("\n\nLa reponse etait %d\n\n", number);
-    EXIT_SUCCESS;
+    printf("\n\nLa réponse était %d\n\n", number);
 }
 
