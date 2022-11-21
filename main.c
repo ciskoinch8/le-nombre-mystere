@@ -17,11 +17,11 @@ int main(void){
 
     // Le temps entre dans le calcul du nombre aleatoire.
     srand(time(NULL)); // Initialiser le generateur de nombre pseudo-aleatoire
-    number = rand() % 101;
+    number = rand() % 11;
 
     nbr_of_guesses = 0;
     while(done == NO){
-        printf("\nDonnez un nombre entre 0 et 100\n");
+        printf("\nDonnez un nombre entre 0 et 10\n");
         scanf("%d", &guess_value);  // lecture du nombre
         
         nbr_of_guesses++;
